@@ -1,0 +1,93 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "MoMo",
+      "author": "Sahil Thapa",
+      "description": "Momo is a dumpling made of all-purpose flour and filled with either meat or vegetables. Inspired by Tibetan dumplings, the dish is a very popular Nepali street food.",
+      "country":"Nepal",
+      "flag":"",
+      "img":"https://trendinnepal.com/wp-content/uploads/2022/07/Special-chicken-momo-with-chutney.jpg",
+      "ingredients":[
+        {
+          "id":1,
+          "ingName":"flour",
+          "quantity":"1 kg"
+        },
+        {
+          "id":2,
+          "ingName":"onion",
+          "quantity":"1 grated"
+        },
+        {
+          "id":3,
+          "ingName":"minced meat",
+          "quantity":"500 g"
+        },
+        {
+          "id":4,
+          "ingName":"vegetable oil",
+          "quantity":"2 tablespoons"
+        },
+        {
+          "id":5,
+          "ingName":"salt",
+          "quantity":"according to taste"
+        },
+        {
+          "id":6,
+          "ingName":"ginger/garlic paste",
+          "quantity":"2 tablespoons"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Chowmin",
+      "author": "Sahil Thapa",
+      "description": "Chow mein is a Chinese dish made from stir-fried noodles with vegetables and sometimes meat or tofu.",
+      "country":"China",
+      "flag":"",
+      "img":"https://www.jocooks.com/wp-content/uploads/2019/03/chow-mein-1-1.jpg",
+      "ingredients":[
+        {
+          "id":1,
+          "ingName":"noodles",
+          "quantity":"500 g"
+        },
+        {
+          "id":2,
+          "ingName":"onion",
+          "quantity":"1 grated"
+        },
+        {
+          "id":3,
+          "ingName":"minced meat",
+          "quantity":"500 g"
+        },
+        {
+          "id":4,
+          "ingName":"vegetable oil",
+          "quantity":"2 tablespoons"
+        },
+        {
+          "id":5,
+          "ingName":"salt",
+          "quantity":"according to taste"
+        },
+        {
+          "id":6,
+          "ingName":"ginger/garlic paste",
+          "quantity":"2 tablespoons"
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ]
+}
