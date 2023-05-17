@@ -1,0 +1,12 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+input {
+  margin: 0.5rem;
+}
+label {
+  width: 300px;
+}

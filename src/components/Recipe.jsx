@@ -1,30 +1,32 @@
 import React,{useEffect, useState} from 'react';
 import axios from 'axios';
-import Form from './Form';
 import Cards from './Cards';
+import Search from './Search';
 
 
 const Recipe = () => {
     const [recipes , setRecipes] = useState([]);
     const [searchRecipe , setSearch] = useState({search:""});
+    const [isLoading, setIsLoading] = useState(false);
 
-    const [inputData, setInputData] = useState({
-        id: "",
-        title: "",
-        author: "",
-        description: "",
-        country:"",
-        flag:"",
-        img:"",
-        ingredients:[]
-
-    });
     
+    
+  
 
     useEffect(()=>{
+        setIsLoading(true);
         axios.get("http://localhost:4002/recipes")
-        .then(res => {setRecipes(res.data)})
+        .then(res => {setRecipes(res.data);
+            setIsLoading(false);
+        })
     }, []);
+
+    if(isLoading){
+      return <p>Loading....</p>
+      
+    }
+
+   
 
     const searchHandler = (e) =>{
         e.preventDefault();
@@ -38,10 +40,11 @@ const Recipe = () => {
     
     return (
         <div>
-            <div>
-                <input type="text" onChange={searchHandler}/>
+            <div className='search'>
+                <Search change={searchHandler}/>
             </div>
             {searchFilter.map((recipe) => (<Cards
+            id = {recipe.id}
             key = {recipe.id}
             name = {recipe.title}
             desc = {recipe.description}
@@ -49,10 +52,6 @@ const Recipe = () => {
             author = {recipe.author}
             />)     
             )}
-            {/* {recipes.ingredients.map((ing)=>(<Main
-            key = {ing.id}
-            ingName = {ing.ingName}
-            quantity = {ing.quantity}/>))} */}
         </div>
         
     );

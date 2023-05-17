@@ -5,6 +5,9 @@ import About from './pages/About';
 import Header from './components/Header';
 import AddRecipe from './pages/AddRecipe';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import SingleRecipe from './components/SingleRecipe';
+
+
 
 function App() {
   return (
@@ -15,7 +18,7 @@ function App() {
        <Route path='recipes' element = {<Recipes/>}/>
        <Route path='addRecipe' element = {<AddRecipe/>}/>
        <Route path='about' element = {<About/>}/>
-       
+       <Route path='recipes/:singlerecipe' element = {<SingleRecipe/>}/>
       </Routes>
       </BrowserRouter>
      
