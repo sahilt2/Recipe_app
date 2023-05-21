@@ -7,7 +7,7 @@
       "description": "Momo is a dumpling made of all-purpose flour and filled with either meat or vegetables. Inspired by Tibetan dumplings, the dish is a very popular Nepali street food.",
       "country": "Nepal",
       "flag": "",
-      "img": "https://trendinnepal.com/wp-content/uploads/2022/07/Special-chicken-momo-with-chutney.jpg",
+      "img": "https://chaosofflavor.com/wp-content/uploads/2022/12/final2-scaled-e1670259032636-500x500.jpg",
       "ingredients": [
         {
           "id": 1,
@@ -39,7 +39,8 @@
           "ingName": "ginger/garlic paste",
           "quantity": "2 tablespoons"
         }
-      ]
+      ],
+      "instructions": "Making momo wrappers is the most time-consuming. However, if you want to save time, you can buy a ready-made wrapper from the grocery store but here for this recipe, I am making it from scratch."
     },
     {
       "id": 2,
@@ -80,24 +81,60 @@
           "ingName": "ginger/garlic paste",
           "quantity": "2 tablespoons"
         }
-      ]
+      ],
+      "instructions": ""
     },
     {
       "id": 3,
-      "title": "dff",
-      "author": "dfdsf",
-      "description": "seefe",
-      "country": "France",
-      "flag": "🇫🇷",
-      "img": "",
+      "title": "Egg Fried Rice",
+      "author": "Sahil Thapa",
+      "description": "Make your own healthy egg-fried rice with our easy recipe. Use leftover rice, or cook and dry it on a plate before using so it doesn't stick to the wok",
+      "country": "Thailand",
+      "flag": "🇹🇭",
+      "img": "https://twoplaidaprons.com/wp-content/uploads/2020/03/egg-fried-rice-holding-a-bowl-of-fried-rice.jpg",
       "ingredients": [
         {
           "id": 1,
-          "ingName": "onion",
-          "quantity": "1"
+          "ingName": "Egg",
+          "quantity": "2"
+        },
+        {
+          "id": 2,
+          "ingName": "Oil",
+          "quantity": "2 table spoon"
         }
-      ]
+      ],
+      "instruction": ""
+    },
+    {
+      "id": 4,
+      "title": "Greek Salad",
+      "author": "Sahil Thapa",
+      "description": "Make a fresh and colourful Greek salad in no time. It's great with grilled meats at a barbecue, or on its own as a veggie main",
+      "country": "Greece",
+      "flag": "🇬🇷",
+      "img": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1201727_11-4026b8d.jpg?quality=90&webp=true&resize=300,272",
+      "ingredients": [
+        {
+          "id": 1,
+          "ingName": "Tomatoes",
+          "quantity": "4"
+        },
+        {
+          "id": 2,
+          "ingName": "Kalamata Olives",
+          "quantity": "16"
+        },
+        {
+          "id": 3,
+          "ingName": "Dried oregano",
+          "quantity": "1 tsp"
+        }
+      ],
+      "instruction": ""
     }
+  
+   
   ],
   "comments": [
     {

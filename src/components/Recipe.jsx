@@ -35,7 +35,9 @@ const Recipe = () => {
     }
 
     const searchFilter = recipes.filter((recipe) => {
-        return recipe.title.toLowerCase().includes(searchRecipe.search.toLowerCase());
+        const searchTitle = recipe.title.toLowerCase().includes(searchRecipe.search.toLowerCase());
+        const searchCountry = recipe.country.toLowerCase().includes(searchRecipe.search.toLowerCase());
+        return searchTitle || searchCountry
     })
     
     return (
@@ -43,6 +45,7 @@ const Recipe = () => {
             <div className='search'>
                 <Search change={searchHandler}/>
             </div>
+            <div className='recipe-page'>
             {searchFilter.map((recipe) => (<Cards
             id = {recipe.id}
             key = {recipe.id}
@@ -50,8 +53,10 @@ const Recipe = () => {
             desc = {recipe.description}
             img = {recipe.img}
             author = {recipe.author}
+            flag={recipe.flag}
             />)     
             )}
+            </div>
         </div>
         
     );

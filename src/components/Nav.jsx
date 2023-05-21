@@ -13,9 +13,6 @@ const Nav = () => {
                     <li>
                         <NavLink to='addRecipe'>Add Recipes</NavLink>
                     </li>
-                    <li>
-                        <NavLink to='about'>About</NavLink>
-                    </li>
                 </ul>
             </nav>
         </div>

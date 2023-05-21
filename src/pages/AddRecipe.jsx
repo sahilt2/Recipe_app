@@ -2,7 +2,7 @@
 import React, {useState,useEffect} from 'react';
 import Form from '../components/Form';
 import axios from 'axios';
-import './addRecipe.css';
+import './AddRecipe.css';
 
 const AddRecipe = () => {
     const [inputData, setInputData] = useState({
@@ -13,12 +13,14 @@ const AddRecipe = () => {
         country:"",
         flag:"",
         img:"",
-        ingredients:[]
+        ingredients:[],
+        instructions:""
     });
     const [countries, setCountries] = useState([]);
     const [ingredients, setIngredients] = useState([
         {id:1 ,ingName:"",quantity:""},
     ]);
+
 
     useEffect(()=>{
         axios.get("https://restcountries.com/v3.1/all")
@@ -75,6 +77,7 @@ const AddRecipe = () => {
     const submitData = (e) => {
         e.preventDefault();
         axios.post("http://localhost:4002/recipes", inputData);
+        window.location = "recipes";
       };
 
     return (
