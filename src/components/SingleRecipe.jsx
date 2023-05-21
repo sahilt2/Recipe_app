@@ -26,8 +26,6 @@ const SingleRecipe = () => {
     }
   
 
-    // console.log(singleRecipe);
-
     return (
       
         <div className='single-recipe'>

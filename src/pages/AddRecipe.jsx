@@ -24,8 +24,8 @@ const AddRecipe = () => {
 
     useEffect(()=>{
         axios.get("https://restcountries.com/v3.1/all")
-        .then(res=> {console.log(res.data)
-            setCountries(res.data)})
+        .then(res=> {
+         setCountries(res.data)})
      },[])
 
     // adding more ingredient field
@@ -34,7 +34,6 @@ const AddRecipe = () => {
         const newIngredient = { id: ingredients.length + 1, ingName: "", quantity: "" };
         setIngredients([...ingredients, newIngredient]);
 
-        // console.log(newIngredient);
       };
 
       // remove ingredient button
@@ -57,10 +56,6 @@ const AddRecipe = () => {
     }
 
     const inputHandler = (e) => {
-        // console.log(e.target.name);
-        // console.log(e.target.value);
-
-        // setInputData({...inputData,[e.target.name]:e.target.value})
        const {name,value} = e.target;
  
        if (name === "country") {
