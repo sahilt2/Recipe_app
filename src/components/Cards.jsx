@@ -14,7 +14,6 @@ const Cards = ({id,name,desc,img,author,flag}) => {
             </div>
             <div className='image'>
             <img src={img} alt={name} />
-            
             </div>
             </div>
         </div>

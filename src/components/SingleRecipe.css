@@ -13,7 +13,7 @@ tr:nth-child(even) {
   background-color: #f9f9f9;
 }
 .single-recipe {
-  margin: 2rem;
+  margin: 3rem;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -29,6 +29,7 @@ tr:nth-child(even) {
   min-width: 400px;
   height: 450px;
   position: relative;
+  margin: 2rem 0;
 }
 .single-img img {
   width: 100%;
@@ -46,7 +47,6 @@ tr:nth-child(even) {
   right: -1rem;
   border-radius: 50px;
   border: none;
-  display: inline-block;
   width: 40px;
   height: 40px;
   display: flex;

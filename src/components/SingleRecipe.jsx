@@ -31,7 +31,6 @@ const SingleRecipe = () => {
         <div className='single-recipe'>
           <h2>{singleRecipe.title}</h2>
           <div className='single-area'>
-          
           <div className='single-img'>
             <img src={singleRecipe.img} alt={singleRecipe.title} />
             <div className='flag'>
