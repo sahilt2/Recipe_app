@@ -41,7 +41,7 @@ const Recipe = () => {
     })
     
     return (
-        <div>
+        <div className='main'>
             <div className='search'>
                 <Search change={searchHandler}/>
             </div>

@@ -5,7 +5,9 @@ import './Recipes.css';
 const Recipes = () => {
     return (
         <div>
+            <div>
             <Recipe/>
+            </div>
         </div>
     );
 };

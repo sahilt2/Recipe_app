@@ -11,21 +11,16 @@
   *zoom: 1;
 }
 
-.container {
-  margin: 25px auto 0;
-  position: relative;
-  width: 692px;
-}
 .card {
   background-color: #fff;
   padding: 30px;
   position: relative;
   box-shadow: 0 0 5px rgba(75, 75, 75, 0.07);
-  z-index: 1;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   align-items: center;
   border-radius: 4px;
+  margin: 1rem;
 }
 
 .card-body {
