@@ -68,6 +68,7 @@ npm run server
 
 - App default: http://localhost:3000/
 - JSON default: http://localhost:4002/recipes
+- API: https://restcountries.com/v3.1/all
 
 ### Author
 
