@@ -132,15 +132,38 @@
         }
       ],
       "instruction": ""
-    }
-  
-   
-  ],
-  "comments": [
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 5,
+      "title": "Pasta",
+      "author": "sahil thapa",
+      "description": "cook",
+      "country": "Italy",
+      "flag": "🇮🇹",
+      "img": "https://www.budgetbytes.com/wp-content/uploads/2013/07/Creamy-Spinach-Tomato-Pasta-bowl-500x500.jpg",
+      "ingredients": [
+        {
+          "id": 1,
+          "ingName": "onion",
+          "quantity": "2"
+        },
+        {
+          "id": 2,
+          "ingName": "pasta",
+          "quantity": "20g"
+        },
+        {
+          "id": 3,
+          "ingName": "tomato",
+          "quantity": "2 "
+        },
+        {
+          "id": 4,
+          "ingName": "salt",
+          "quantity": "1tbs"
+        }
+      ],
+      "instructions": "Eat it"
     }
   ]
 }

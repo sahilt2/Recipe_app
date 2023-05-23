@@ -85,3 +85,10 @@ div.buttons {
 div.buttons button {
   margin: 0 4px;
 }
+
+.alert-button {
+  background-color: #007bff;
+}
+.alert-button:hover {
+  background-color: #0056b3;
+}

@@ -1,8 +1,9 @@
-
 import React, {useState,useEffect} from 'react';
 import Form from '../components/Form';
 import axios from 'axios';
+import Swal from 'sweetalert2';
 import './AddRecipe.css';
+
 
 const AddRecipe = () => {
     const [inputData, setInputData] = useState({
@@ -71,8 +72,20 @@ const AddRecipe = () => {
 
     const submitData = (e) => {
         e.preventDefault();
-        axios.post("http://localhost:4002/recipes", inputData);
-        window.location = "recipes";
+        axios.post("http://localhost:4002/recipes", inputData)
+        .then(() => {
+            Swal.fire({
+                icon: 'success',
+                title: 'Recipe Submitted',
+                text: 'Your recipe has been added successfully',
+                customClass: {
+                    confirmButton: 'alert-button'
+                }
+            })
+            .then(() => {
+                window.location = "recipes";
+            });
+        });
       };
 
     return (
