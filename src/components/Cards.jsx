@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Cards = ({id,name,desc,img,author,flag}) => {
     return (
         <div className='container'>
-            <div className='card u-clearfix'>
+            <div className='card'>
             <div className='card-body'>
             <span className='author'>{author}</span>
             <h2 className='title'>{name} <span>{flag}</span></h2>

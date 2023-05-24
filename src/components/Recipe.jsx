@@ -45,7 +45,7 @@ const Recipe = () => {
             <div className='search'>
                 <Search change={searchHandler}/>
             </div>
-            <div className='recipe-page'>
+            <div>
             {searchFilter.map((recipe) => (<Cards
             id = {recipe.id}
             key = {recipe.id}
